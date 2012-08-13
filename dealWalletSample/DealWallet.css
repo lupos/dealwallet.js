@@ -1,0 +1,99 @@
+.dealWallet{
+	position:relative;
+	float:left;
+	width:745px;
+	height:200px;
+	margin-bottom:15px;
+	user-select:none;
+}
+.small .dealWallet{width:745px;}
+.medium .dealWallet{width:975px;}
+.large .dealWallet{width:975px;}
+.dealWallet div{
+	-moz-user-select:none;
+	-webkit-user-select:none;
+	user-select:none;
+}
+.dealWallet a{text-decoration:none; }
+#Slides{
+	position:relative;
+	float:left;
+	display:block;
+	height:190px;
+	width:460px;
+	overflow:hidden;
+}
+.small #Slides{width:460px;}
+.medium #Slides{width:690px;}
+.large #Slides{width:690px;}
+#SlidesContainer {
+	position:absolute;
+	top:0;
+	left:0;
+    width:470px;
+    height:170px;
+  }
+
+  .slide {
+	float: left;
+    width:205px;
+    height:130px;
+	margin:10px 3px 10px 2px;
+	padding:10px;
+    display:block;
+	border:none;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	background:#ccc;
+	cursor:pointer;
+  }
+.prev, .next{
+	position:absolute;
+	top:70px;
+	width:20px;
+	height:30px;
+	line-height:30px;
+	vertical-align:middle;
+	text-align:center;
+	border:1px solid black;
+	background:white;
+	cursor: pointer;
+}
+.prev{
+	left:-10px;
+}
+.next{
+	left:450px;
+}
+.small .next{left:450px;}
+.medium .next{left:680px;}
+.large .next{left:680px;}
+.dealWalletCounterContainer{
+	margin-top:170px;
+	width:100%; 
+	height:20px; 
+	border:none; 
+	text-align:center;
+}
+.dealWalletCounter{
+	display:inline-block;
+	height:20px;
+	background:white;
+}
+	.dealWalletCountIndicator{
+		float:left;
+		width:10px;
+		height:10px;
+		margin:2px;
+		-webkit-border-radius:50px;
+		background:#ccc;
+	}
+	.dealWalletCountIndicator.selected{
+		background:#eee;
+	}
+#DealWalletDetails{
+	float:right;
+	width:260px;
+	height:170px;
+	border:1px solid #000;
+}

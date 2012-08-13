@@ -1,0 +1,41 @@
+#Content{
+	width:944px;
+	margin:0 auto;
+	overflow:visible;
+	position:relative;
+	z-index:1000;
+	border:none;
+}
+
+/*940
+1400*/
+
+#Content.small{width:940px;}
+#Content.medium{width:1170px;}
+#Content.large{width:1400px;}
+
+/*div{border:1px solid black; margin:-1px;}*/
+#UpSell{
+	float:right;
+}
+.upSell{
+
+}
+.upSellVertical{
+	width:180px;
+	height:573px;
+}
+.small .upSellCertical{width:180px;}
+.medium .upSellVeritcal{width:180px;}
+.large .upSellVertical{width:410px}
+
+#InfoPane{
+	float:left;
+	width:745px;
+	height:360px;
+}
+.small #InfoPane{width:745px;}
+.medium #InfoPane{width:975px;}
+.large #InfoPane{width:975px;}
+
+/*myplace page end*/

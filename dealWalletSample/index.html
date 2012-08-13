@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>Deal Wallet</title>		
+		<link rel="stylesheet" href="main.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<link rel="stylesheet" href="DealWallet.css" type="text/css" media="screen" title="no title" charset="utf-8">		
+	</head>
+	<body id="index" onload="">
+		<div id="Content">
+			<div id="MyPlaceDealWallet" class="dealWallet">
+				<div id="Slides">
+					<div class="dealWalletCounterContainer">
+						<div class="dealWalletCounter" data-bind="template : {foreach: slides}">
+							<div class="dealWalletCountIndicator"></div>
+						</div>
+					</div>
+					<div id="SlidesContainer" data-bind="template : {foreach: slides, beforeRemove: hideCoupon, afterAdd: showCoupon}">
+				    	<div class="slide">
+				     		<h1 data-bind="text: name"></h1>
+				    		<p data-bind="text: details"></p>
+							<a data-bind="attr:{href:url}"></a>
+				  		</div>
+				  	</div>
+				</div>
+				<div class="prev"><</div>
+				<div class="next">></div>
+				<div id="DealWalletDetails">
+					<input data-bind="value: couponCode"></input>
+					<button data-bind="click: ajaxTest">Apply Code</button>
+					<div>
+						valid codes to test:<br />5dollar<br />10dollar<br />10percent<br />25percent
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="knockout-2.0.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="DealWallet.js" type="text/javascript" charset="utf-8"></script>
+		<script src="plugins.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
